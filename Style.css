@@ -1,0 +1,25 @@
+.title{
+    Color: white;
+    background-color: black;
+    text-align: center;
+    padding: 10px;
+}
+
+.search-info{
+    background-color: lightgrey;
+}
+
+.todays-info{
+    background-color: white;
+    border: 2px, 0px, 2px, 2px;
+    border-color: gray;
+    padding: 0;
+    margin: 25px;
+}
+
+.fiveday-info{
+    background-color: dodgerblue;
+    padding: 0;
+    margin: 5px;
+
+}
