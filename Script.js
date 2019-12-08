@@ -19,7 +19,7 @@
             var $location = $("#Location").val();
     //API
         //Write URL variable
-            var queryURLToday = "http://api.openweathermap.org/data/2.5/weather?q=" + $location + "&APPID=21910e38cace261c6a0a4021727e814d"
+            var queryURLToday = "https://api.openweathermap.org/data/2.5/weather?q=" + $location + "&APPID=21910e38cace261c6a0a4021727e814d"
         
 
         //Write AJAX function
@@ -37,8 +37,8 @@
                 var $lat = response.coord.lat;
                 var $lon = response.coord.lon;
                 var $weatherIconCode = response.weather[0].icon;
-                var $weatherIconURL = "http://openweathermap.org/img/wn/" + $weatherIconCode + "@2x.png"
-                var queryURLUvi = "http://api.openweathermap.org/data/2.5/uvi?appid=21910e38cace261c6a0a4021727e814d&lat=" + $lat + "&lon=" + $lon;
+                var $weatherIconURL = "https://openweathermap.org/img/wn/" + $weatherIconCode + "@2x.png"
+                var queryURLUvi = "https://api.openweathermap.org/data/2.5/uvi?appid=21910e38cace261c6a0a4021727e814d&lat=" + $lat + "&lon=" + $lon;
                 //Dynamic page updates
                         //Append data to elements
                 $weatherData.append($nameElement.text($nameText + " " + $parsedDateText), $weatherIconIMG.attr("src",$weatherIconURL));
@@ -58,7 +58,7 @@
                 });
             }); 
         //---------------------------5 day forecast-------------------------------------//
-    var queryURL5day = "http://api.openweathermap.org/data/2.5/forecast?q="+ $location + "&APPID=21910e38cace261c6a0a4021727e814d"
+    var queryURL5day = "https://api.openweathermap.org/data/2.5/forecast?q="+ $location + "&APPID=21910e38cace261c6a0a4021727e814d"
         $.ajax({
             url: queryURL5day,
             method: "GET"
@@ -87,7 +87,7 @@
                     
                     $fivedayForecast.append($forecastCard.append(
                         $fivedayForecastDayElement.text($parseddayVal), 
-                        $fivedayIconElement.attr("src", "http://openweathermap.org/img/wn/" + $fivedayIcon + "@2x.png"),
+                        $fivedayIconElement.attr("src", "https://openweathermap.org/img/wn/" + $fivedayIcon + "@2x.png"),
                         $fivedayForecastTempElement.text(("Temp: "+(tempVal-273).toFixed(1)) +"\xB0C"),
                         $fivedayForecastHumidityElement.text("Humidity: "+humidVal+"%")
                     ));
