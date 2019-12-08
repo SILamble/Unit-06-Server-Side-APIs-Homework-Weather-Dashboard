@@ -40,5 +40,7 @@ Additional features above the MVP:
 (/Assets/Capture-001.png)
 
 ##Deployed App##
+https://silamble.github.io/Unit-06-Server-Side-APIs-Homework-Weather-Dashboard/
 
 ##GitHub Repo##
+https://github.com/SILamble/Unit-06-Server-Side-APIs-Homework-Weather-Dashboard
