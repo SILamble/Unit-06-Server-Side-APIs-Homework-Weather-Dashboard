@@ -17,9 +17,14 @@
     margin: 25px;
 }
 
-.fiveday-info{
+.card{
     background-color: dodgerblue;
-    padding: 0;
+    color: white;
     margin: 5px;
+}
 
+#weather-data{
+    padding: 5px;
+    border: 2px;
+    border-color: gray;
 }
